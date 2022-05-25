@@ -1,3 +1,7 @@
+.hidden{
+    visibility: hidden;
+}
+
 .whole-navbar{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -103,4 +107,83 @@ button {
 .content {
     height: 600px;
     background-image: linear-gradient(to bottom right, #373A42 , #0C0D0F);
+    display: flex;
+    justify-content: left;
+}
+
+.content > .paragraphs > :nth-child(1) {
+    font-size: 40px;
+    color: rgb(182, 182, 182);
+
+}
+
+.content > .paragraphs > :nth-child(1) > b{
+    color: white;
+
+}
+
+.codepen-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: none;
+}
+
+.codepen-projects > .codepen-image > img{
+    width: 600px;
+    margin: none;
+}
+
+.codepen-projects > .codepen-image > p{
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 120px;
+    background-color: black;
+}
+
+.footer > .codepen-for {
+    width: 100%;
+    border: solid rgb(119 118 118) 1.5px;
+    background-color: #2e2e2e;
+    height: 51px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1.5s;
+}
+
+.footer > .codepen-for:hover{
+    border-radius: 8px;
+    border-color: white;
+    background-color: black;
+    font-size: 110% ;
+}
+
+.footer > .codepen-for > p > b {
+    font-size: 130%;
+    text-transform: uppercase;
+} 
+
+@media screen and (max-width: 1000px) {
+
+    .navbar-buttons{
+        display: none;
+    }
+
+    .hidden{
+        visibility: visible;
+        width: 300px;
+        color: white;
+    }
+
 }
