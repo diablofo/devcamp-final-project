@@ -1,3 +1,7 @@
+*{
+    margin: 0;
+}
+
 .hidden{
     visibility: hidden;
 }
@@ -114,7 +118,7 @@ button {
 }
 
 .content > .paragraphs > :nth-child(1) {
-    font-size: 30px;
+    font-size: 40px;
     color: rgb(182, 182, 182);
     margin: 0;
 
@@ -125,7 +129,7 @@ button {
 }
 
 .content > .paragraphs > :nth-child(2) {
-    
+    font-size: 38px;
     color: rgb(199, 199, 199);
     margin: 0;
 }
@@ -133,7 +137,7 @@ button {
 .codepen-projects{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     padding: none;
 }
 
@@ -147,7 +151,7 @@ button {
 }
 
 .content > .paragraphs > p {
-    font-size: 20PX;
+    font-size: 75%;
 }
 
 .border{
